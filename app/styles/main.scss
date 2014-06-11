@@ -10,63 +10,118 @@ body {
 }
 
 .top-header {
-    height: 80px;
+    height: 69px;
     width: 100%;
     background-color: #eeeeee;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 50px;
-    line-height: 80px;
+    line-height: 69px;
 }
 
 .main-body  {
-    width: 1400px;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px auto;
+    padding: 0;
+    text-align: center;
+    background-color: blue;
+    height: 282px;
+    overflow: scroll;
+    padding-top: 10px;
+}
+
+.first {
+    width: 41%;
+}
+
+.second, .third {
+    width: 28%;
+    margin-left: 9px;
+}
+
+.fourth {
+    margin-top: 10px;
+    width: 99%;
+}
+
+.construction {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: red;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.construction h4 {   
+    margin: 0 auto;
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+.bundle1,  {
+    width: 22%
+}
+
+.bundle2, .bundle3,{
+    width: 44%;
+}
+
+.bundle4, {
+    width: 9%
 }
 
 .collection {
     vertical-align: top;
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    min-height: 300px;
-    background-color: #eeeeee;
-    padding: 6px;
+    display: inline;
 }
 
-.B {
-    margin-left: 15px;
-    margin-right: 15px;
+.caption {
+    font-size: 14px;
+    height: auto;
+    text-align: left;
+    margin-left: 4px;
+    margin-bottom: 6px;
 }
 
 .button {
     padding: 0;
-    width: 115px;
-    height: 40px;
-    font-size: 15px;
-    line-height: 40px;
-    border-radius: 4px;
+    width: 45%;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    border-radius: 0px;
     text-align: center;
     color: #000000;
     border: 1px solid #999999;
     background-color: #cccccc;
 }
 
-.A-left, .B-left, .C-left {
+.A-left, .B-left, .C-left, .D-left {
     float: left;
+    margin-left: 3px;
 }
 
-.A-right, .B-right, .C-right {
+.A-right, .B-right, .C-right, .D-right {
     float: right;
+    margin-right: 3px;
 }
 
 .button:hover {
     box-shadow: 0px 0px 2px #333333;
 }
 
-.button-container {
+.button-box {
     height: 42px;
-    margin-bottom: 7px;
+    margin-bottom: 0px;
 }
 
 .image-box {
@@ -79,7 +134,7 @@ body {
 .footer {
     text-align: center;
     margin: 0 auto;
-    height: 40px;
+    height: 0px;
     width: 100%;
     margin-top: 25px;
 }
