@@ -62,6 +62,8 @@ body {
 }
 .last {
     width: 99.2%;
+    box-shadow: 0px 0px 5px #000000;
+    border-bottom: 1px solid #000000;
 }
 .container {
     background-image: linear-gradient(to bottom right, #1D1F20 0%, #444444 100%);
@@ -114,20 +116,21 @@ body {
 }
 .button {
     padding: 0;
-    width: 80px;
-    height: 30px;
+    width: 70px;
+    height: 25px;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 25px;
     border-radius: 0px;
     text-align: center;
     color: #000000;
     border: 1px solid #999999;
     border-radius: 5px;
     background-color: #cccccc;
-}
-.A-left, .B-left, .C-left, .D-left, .A-right, .B-right, .C-right, .D-right{
     float: left;
     margin-right: 3px;
+}
+.button img {
+    margin-top: 2px;
 }
 
 .button:hover {
@@ -136,6 +139,7 @@ body {
 .button-box {
     height: 42px;
     margin-bottom: 0px;
+    border-bottom: 1px solid #393939;
 }
 // .footer {
     //     text-align: center;
