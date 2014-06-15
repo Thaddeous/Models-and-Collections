@@ -1,6 +1,6 @@
 "use strict";
  
-var Data = Backbone.Model.extend({
+var IdeasData = Backbone.Model.extend({
 	idAttribute: "_id",
 
 	defaults: {
@@ -9,47 +9,58 @@ var Data = Backbone.Model.extend({
 	} 
   })
  
-
   var Ideas = Backbone.Collection.extend({
-  	model: Data,
+  	model: IdeasData,
   	url: "http://tiny-pizza-server.herokuapp.com/collections/tad-ideas", 
 
   initialize: function() {
-  	console.log("this is IDEAS initialized");
+  	console.log("this is Ideas initialized");
   }
+  })
 
+//=======================================================================
+  
+var ApprovedData = Backbone.Model.extend({
+  idAttribute: "_id",
+
+  defaults: {
+    title: "None",
+    caption: "None"
+  } 
+  })
+
+var Approved = Backbone.Collection.extend({
+  model: ApprovedData,
+  url: "http://tiny-pizza-server.herokuapp.com/collections/tad-approved",
+
+  initialize: function() {
+  	console.log("this is Approved initialized");
+  }
   })
 
 
 
 
-  // var Approved = Backbone.Collection.extend({
+// //=======================================================================
+//   var Progress = Backbone.Collection.extend({
+//     model: Data,
+//     url: "http://tiny-pizza-server.herokuapp.com/collections/tad-progress",
 
-  // initialize: function() {
-  // 	console.log("this is IDEAS initialized");
-  // }
+//   initialize: function() {
+//     console.log("this is Progress initialized");
+//   }
 
-  // })
-
-
-
-
-  // var Progress = Backbone.Collection.extend({
-
-  // initialize: function() {
-  // 	console.log("this is IDEAS initialized");
-  // }
-
-  // })
+//   })
 
 
 
+// //=======================================================================
+//   var Complete = Backbone.Collection.extend({
+//     model: Data,
+//     url: "http://tiny-pizza-server.herokuapp.com/collections/tad-complete",
 
+//   initialize: function() {
+//     console.log("this is Complete initialized");
+//   }
 
-  // var Complete = Backbone.Collection.extend({
-
-  // initialize: function() {
-  // 	console.log("this is IDEAS initialized");
-  // }
-
-  // })
+//   })
