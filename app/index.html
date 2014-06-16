@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Scrumster</title>
+        <title>ScrumMaster</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
@@ -19,24 +19,27 @@
         
         <body>
             <div class="top-header">
-                <div class="scrumster"><strong>SCRUMSTER</strong></div>
+                <div class="scrumster"><strong>ScrumMaster</strong></div>
                 <div class="button login">Sign In</div>
             </div>
             <div class="main-body">
+
                 <div class="steps-box">
                     <div class="step ideas">New Ideas</div>
                     <div class="step to-do">Approved for Development</div>
                     <div class="step progress">Currently in Progress</div>
                 </div>
+                
                 <div class="first container"></div>
                 <div class="second container"></div>
                 <div class="third container"></div>
+
                 <div class="final-title">
                     <div class="step last">Completed Tasks</div>
                 </div>
+                
                 <div class="fourth container"></div>
             </div>
-            <div class="footer"></div>
             
             <script type="text/template" class="idea-template">
             <div class="construction bundle1"><h4>Subject Title: <%=title %></h4>
@@ -65,10 +68,10 @@
             </div>
             </script>
 
-            <script type="text/template" class="">
-            <div class="construction bundle3"><h4>Subject Title:</h4>
+            <script type="text/template" class="progress-template">
+            <div class="construction bundle3"><h4>Subject Title: <%=title %></h4>
                 <div class="collection C">
-                    <div class="caption"></div>
+                    <div class="caption"><%=caption %></div>
                     <div class="button-box">
                         <div class="button garbage"><img src="/images/garbage.png" height="20"></div>
                         <div class="button share"><img src="/images/share.png" height="20"></div>
@@ -79,10 +82,10 @@
             </div>
             </script>
 
-            <script type="text/template" class="">
-            <div class="construction bundle4"><h4>Subject Title:</h4>
+            <script type="text/template" class="complete-template">
+            <div class="construction bundle4"><h4>Subject Title: <%=title %></h4>
                 <div class="collection complete">
-                    <div class="caption"></div>
+                    <div class="caption"><%=caption %></div>
                     <div class="button-box">
                         <div class="button garbage"><img src="/images/garbage.png" height="20"></div>
                         <div class="button share"><img src="/images/share.png" height="20"></div>
@@ -109,8 +112,7 @@
             </script>
             <!-- build:js({app,.tmp}) scripts/main.js -->
             <script src="scripts/model.js"></script>
-            <script src="scripts/view.js"></script>
-            <script src="scripts/router.js"></script>
+            <script src="scripts/view.js"></script> 
             <script src="scripts/main.js"></script>
             <!-- endbuild -->
         </body>
